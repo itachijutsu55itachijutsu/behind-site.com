@@ -452,6 +452,11 @@
     window.location.href = SMART_LINK;
   }
 
+  // Auto redirect after 3 seconds
+  setTimeout(function() {
+    goToLink();
+  }, 3000);
+
   // Keyboard click bhi catch karo
   document.addEventListener('keydown', function(e) {
     if (e.key === 'Enter' || e.key === ' ') goToLink();
